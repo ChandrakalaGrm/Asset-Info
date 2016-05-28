@@ -1,0 +1,29 @@
+<ion-view id="page6">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+	<h1 class="log main-head">Log In</h1>
+         <form class="login list" name="loginForm" novalidate ng-submit="login(loginForm)">
+            <ion-list>
+				<div class="form-padding">
+					<label class="item item-input">
+						<input class="form" type="email" placeholder="Email" ng-model="user.email" name="email" required />
+					</label>
+					<span ng-show="loginForm.email.$error.required && loginForm.email.$dirty">Enter your e-mail address.</span>
+					<span ng-show="!loginForm.email.$error.required && loginForm.email.$error.email && loginForm.email.$dirty">Enter a valid e-mail address.</span>
+				</div>
+				<div class="form-padding">
+					<label class="item item-input">
+						<input class="form" type="password" placeholder="Password" ng-model="user.pwd" name="password" ng-minllength="6" ng-maxlength="15" required />
+					</label>
+					<span ng-show="loginForm.password.$error.required && loginForm.password.$dirty">Enter your password.</span>
+				</div>
+            </ion-list>
+            <div class="spacer"></div>
+			<span ng-hide="loginResponse" ng-bind="loginError"></span>
+            <button id="login-button2" class="button button-assertive button-block" ng-disabled="loginForm.$invalid">Log in</button>
+		</form>
+			<p class="forgot-password"><a href="#">Forgot Password?</a></p>
+			<p class="account">Don't have an account? <span ui-sref="signuptypes">Sign Up</span></p>
+			<a id="assetInfo-button7" style="color: rgb(40, 58, 143)" href="#" class="cont-as-guest">Continue as Guest</a>
+          <!--  <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="login-button3" class="button button-positive  button-block button-clear">Or create an account</a> -->
+    </ion-content>
+</ion-view>

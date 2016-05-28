@@ -1,0 +1,877 @@
+/*
+* Asset Info Style sheet
+*/
+
+a {
+	text-decoration: none;
+}
+
+/* Log In page */
+.forgot-password {
+	text-align: center;	
+	font-size: 18px !important;
+}
+
+.forgot-password a ,
+.account a {
+	text-decoration: none;
+	color: rgb(40, 58, 143)	 !important;
+}
+
+.login {
+	margin-top: 5% !important;
+}
+
+#login-button2 {
+	border-radius: 15px !important;
+	font-size: 18px !important;
+	background-color: rgb(35, 166, 207) !important;
+	color: white;
+}
+
+#assetInfo-button7 {
+	font-size: 18px !important;
+	text-align: center;
+    display: block;
+}
+
+/* Log In & Sign up page */
+.form-padding {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;	
+}
+
+.form-padding label {
+	border-radius: 15px !important;
+}
+
+.main-head {
+	text-align: center;
+	color: rgb(35, 166, 207) !important;
+}
+
+.account span,
+.form {
+	text-align: center;
+	font-size: 18px !important;
+	color: rgb(40, 58, 143)	 !important;
+}
+
+.account {
+	text-align: center;
+	font-size: 18px;
+}
+
+.login-input {
+	border-radius: 15px !important;	
+}
+
+.forms-label {
+	height: 40px;
+	background-color: transparent !important;
+	border-radius: 0px !important;
+	text-align: center;
+}
+
+.ion-ios-plus-outline {
+    font-size: 25px;  
+}
+
+.form-label {
+	background-color: skyblue;
+	opacity: 0.9;
+}
+
+.form-input::-webkit-input-placeholder, .form-input::-moz-placeholder {
+  color: white !important;
+}
+
+.newproject-label::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black !important;
+} 
+	
+.tab-item .icon {
+	padding-top: 5%;
+	color: white;
+	font-weight: 100 !important;
+}
+
+.tabs-striped.tabs-stable .tabs {
+	background-color: rgb(35, 166, 207) !important;
+    margin-top: -1%;	
+}
+
+.header-button ,
+.header-text,
+.title,
+.button-icon,
+.tab-title {
+	color: white !important;
+}
+
+.add-button:before,
+.delete-button:before {
+	font-size: 20px !important;
+}
+
+.header-button {
+	display: inline-block !important;
+}
+
+.add-button,
+.ion-chevron-right,
+.ion-chevron-left {
+	color: white !important;
+	font-weight: bold;
+}
+
+.footer-button {
+	color:rgb(35, 166, 207) !important;
+	position:absolute;
+	right:0;
+}
+
+.project-footer {
+	background-color: transparent !important;
+	border: 0px;
+	background-position: 0 !important;
+}
+
+.main-list {
+    z-index: 12;
+    width: 100%;
+}
+
+.main-header {
+	background-color: rgb(35, 166, 207) !important;
+}
+
+.placeholder-icon {
+    color: white;
+    font-size: 20px;
+}
+
+.newproject-label, textarea {
+	border-radius: 6px;
+    background-color: #eef3f6;
+	width: 80%;
+    display: block;
+    margin: auto;
+	height: 36px;
+    padding-top: 0px !important;
+}
+
+.newproject-main label input {
+	background-color: transparent;
+	color: black;
+	font-weight: 500;
+}
+
+.newproject-main {
+	border-bottom: 2px solid #eef3f6;
+}
+
+.bar .title.title-left {
+    text-align: center !important; 
+}
+
+.bar-header,
+.bar-footer {
+	padding: 0;
+	background-color: rgb(35, 166, 207) !important;	
+}
+
+/* .tab-nav .tabs {
+	width: 100% !important;
+} */
+
+/* Sign up*/
+#signup-button1 {
+	border-radius: 15px !important;
+	font-size: 18px !important;
+	background-color: rgb(35, 166, 207);
+	color: white;
+	font-weight: bold;
+}
+
+#assetInfo-button6 ,
+#assetInfo-button8 {
+	font-size: 18px !important;
+	color: rgb(40, 58, 143) !important;
+	background-color: transparent;
+	display: block;
+	text-align: center;
+}
+
+#assetInfo-button4,
+#assetInfo-button5 ,
+#assetInfo-button-one,
+#assetInfo-button-two,
+#assetInfo-button-three {
+	border-radius: 15px !important;
+	background-color: rgb(35, 166, 207);
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;	
+	color: white;
+}
+
+#assetInfo-button-one  {
+	margin-top: 65%;
+}
+
+.signup, 
+.login {
+	text-align: center;
+    color: red;
+}
+
+.add-proj {
+	color: white !important;
+    font-weight: 400 !important;
+}
+
+.item-content  {
+	border-bottom: 1px solid #eef3f6;
+}
+
+.item-input-inset, 
+.item-input-inset div:nth-child(2) {
+	width:100%;
+}
+
+.item-input-inset .title {
+	z-index: 1;
+    position: static;
+	color: white;
+}
+
+.animation {
+	transition: all linear 0.8s;
+	opacity: 1;
+	width: 100%;
+}
+
+.animation.ng-hide {
+	transition: all linear 0s;
+	opacity: 0;
+}
+
+.animation [type=search] {
+	width: 100%;
+	font-weight: 600;
+	color: white !important;
+}
+
+.bar-footer .button-block {
+	margin: 0;
+	height: 100%;
+}
+
+.bar-footer .row, 
+.bar-footer .row div {
+	height: 100%;
+	padding: 0;
+}
+
+.newproject-main .item-select {
+	height: 50px;
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 45px;
+}
+
+.bar-subheader .item-select {
+	height: 44px;
+	border-radius: none;
+}
+
+.item-select select {
+	width: 100%;
+	max-width: 100%;
+	direction: ltr;
+	background-color: rgb(246, 246, 246);	
+}
+
+span.input-label {
+	max-width: 100% !important;
+	width: 100%;
+	padding-left: 5%;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#select-section,
+#select-pre-section {
+	padding: 0;
+	background-image: none;
+}
+
+.section, 
+.pre-section {
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+
+.left-to-center {
+	left: 0%;
+	animation: leftToCenter 0.6s 1 !important;
+	-webkit-animation: leftToCenter 0.6s 1 !important;
+}
+
+@keyframes leftToCenter {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+@-webkit-keyframes leftToCenter {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.center-to-right {
+	display: none;
+	left: -100%;
+	animation: centerToRight 0.6s 1 !important;
+	-webkit-animation: centerToRight 0.6s 1 !important;
+}
+
+@keyframes centerToRight {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+@-webkit-keyframes centerToRight {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+.center-to-left {
+	display: none;
+	left: 100%;
+	animation: centerToLeft 0.6s 1 !important;
+	-webkit-animation: centerToLeft 0.6s 1 !important;
+}
+
+@keyframes centerToLeft {
+	from {
+		left: 0%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes centerToLeft {
+	from {
+		left: 0%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+.right-to-center {
+	left: 0%;
+	animation: rightToCenter 0.6s 1 !important;
+	-webkit-animation: rightToCenter 0.6s 1 !important;
+}
+
+@keyframes rightToCenter {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+@-webkit-keyframes rightToCenter {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.section .item-radio,
+.pre-section .item-radio {
+	margin-top: 5px !important;
+    width: 80%;
+    margin-left: 7%;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+input[type=radio]:checked + label { 
+    background-color: rgb(25, 181, 69) !important;
+}
+
+.section .item-radio .item-content, 
+.pre-section .item-radio .item-content {
+	padding: 10px;
+	background-color: rgb(246, 246, 246);
+	color: black;
+	font-size: 14px;
+}
+
+.section .item-radio input:checked + .radio-content .item-content,
+ .pre-section .item-radio input:checked + .radio-content .item-content {
+	background-color: #23A6CF;
+}
+
+.radio-icon.disable-pointer-events.icon.ion-checkmark {
+	visibility: hidden !important;
+}
+
+.modal-backdrop {
+	background-color: white !important;
+}
+
+/* css media queries start herer */
+/* 
+@media screen and (min-width: 360px)
+ and (max-width: 400px) {
+	 span.input-label {
+		 font-size: 15px;
+	 }
+	 
+	 .newproject-label {
+		 height: 34px;
+		padding-top: 0px !important;
+	 }
+ }
+ 
+ @media screen and (min-width: 400px)
+ and (max-width: 500px) {
+	  span.input-label {
+		 font-size: 15px;
+	 }
+	 
+	 .newproject-label {
+		 height: 34px;
+		padding-top: 0px !important;
+	 }
+	 
+	 .main-head {
+		 padding-top: 10%;
+	 }
+ }
+ 
+ @media screen and (min-width: 400px)
+ and (max-width: 500px) {
+	 .newproject-label {
+		 height: 48px;
+		padding-top: 5px !important;
+	 }
+	 
+	  span.input-label {
+		 font-size: 18px;
+	 }
+	 
+	 .main-head {
+		 padding-top: 10%;
+	 }
+	 
+	 
+	 #assetInfo-button4,
+	 #assetInfo-button5 {
+		font-size: 20px;
+	 }
+ }
+ 
+ @media screen and (min-width: 500px)
+ and (max-width: 600px) {
+	 .main-head {
+		 padding-top: 10%;
+	 }
+	 
+	 .asset-image {
+		 line-height: 390px !important;
+	 }
+	 
+	 #assetInfo-button4,
+	 #assetInfo-button5 {
+		 height: 64px;
+	 }
+	 
+	 #assetInfo-button6,
+	 #assetInfo-button8 {
+		 font-size: 22px !important;
+	 }
+	 
+	  span.input-label {
+		 font-size: 20px;
+	 }
+	 
+	 #login input,
+	 #signup input {
+		 height: 50px !important;
+		 padding-top: 0px !important;
+		 padding-right: 0px !important;
+	 }
+	 
+	 #login-button2,
+	#signup-button1 {
+		 height: 56px;
+		 line-height: 1;
+	 }
+	 
+	 .account {
+		 font-size: 21px;
+	 }
+	 
+	 .newproject-label {
+		 height: 51px;
+		padding-top: 7px !important;
+	 }
+ }
+ 
+ @media screen and (min-width: 700px)
+ and (max-width: 900px) {
+	 .main-head {
+		 padding-top: 10%;
+		 font-size: 50px;
+	 }
+	 
+	  .asset-img {
+		 line-height: 450px !important;
+	 }
+	 
+	 #assetInfo-button4, 
+	 #assetInfo-button5 {
+		 height: 68px;
+		font-size: 26px;
+	 }
+	 
+	 #assetInfo-button6, 
+	 #assetInfo-button8 {
+		 font-size: 26px !important;
+	 }
+	 
+	 #login-button2,
+	 #signup-button1,
+	 .button-large,
+	 .ion-loop {
+		padding: 0 16px;
+		min-width: 68px;
+		min-height: 93px;
+		font-size: 30px !important;
+		line-height: 87px;
+		border-radius: 19px !important;
+	}
+	
+	#assetInfo-button7,
+	.account,
+	.account span,
+	.forgot-password a {
+		font-size: 32px !important;
+		padding: 1%;
+	}
+	
+	.asset-image {
+		line-height: 530px !important;
+	}
+	
+	.item-content {
+		font-size: 31px;
+		line-height: 1;
+	}
+	
+	span.input-label {
+		font-size: 28px;
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	
+	.section .item-radio .item-content, 
+	.pre-section .item-radio .item-content {
+		font-size: 27px;
+		padding: 32px;	
+	}
+	
+	#assetInfo-button6,
+	#assetInfo-button8 {
+		font-size: 27px !important;
+		padding-top:1%;
+	}
+	
+	#signup input,
+	#login input{
+		height: 86px !important;
+		font-size: 25px !important;
+	}
+	
+	.form-padding label {
+		border-radius: 38px !important;
+	}
+	
+	.item-checkbox  {
+		height: 98px !important;
+		padding-top:4%;
+	}
+	
+	.bar-footer {
+		padding: 5%;
+	}
+
+	.item-select select {
+		font-size: 30px !important;
+	}
+	
+	.title-left {
+		font-size: 35px !important;
+	}
+	
+	.newproject-main .item-select {
+		height: 98px
+	}
+	
+	.newproject-label {
+		height: 58px;
+		padding-top: 10px !important;
+	}
+	
+	.newproject-main label input {
+		background-color: transparent;
+		color: black;
+		font-weight: 500;
+		font-size: 25px;
+	}
+	
+	.main-header { 
+		height: 85px !important;
+	}
+	
+	.bar .button, .bar .button {
+		line-height: 1 !important;
+	}
+	
+	.bar .button.button-icon .icon:before {
+		font-size: 69px;
+		margin-top: -3%;
+	}
+	
+	.ion-loop {
+		font-size: 30px !important;
+	}
+	
+	.add-proj {
+		font-size: 36px !important;
+		margin-top: -3% !important;
+	}
+	
+	.item-complex {
+		margin-top: 5%;
+	}
+	
+	#newproject .padding {
+		margin-top: 8%;
+	}
+	 
+ } */
+ 
+ /* Media queries end here. */
+ 
+ 
+.scombobox {
+	border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.scombobox-dropdown-background, 
+.scombobox-dropdown-arrow {
+	display: none !important;
+}
+
+.scombobox-display {
+	border-radius: 10px;
+    padding-left: 10px !important;
+    background-color: lightgrey;
+	color: white !important;
+    font-weight: 800;
+}
+
+.upload-images {
+	text-align: center;
+	color: rgb(35, 166, 207) !important;
+}
+
+.upload-image-icon {
+	font-size: 50px;
+}
+
+.remove-image {
+	font-size: 18px;
+}
+
+.image-preview img {
+	width: 100%;
+}
+
+.uploaded-image {
+	display: none;
+}
+
+
+ion-modal-view {
+	width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+#select-section label,
+#select-pre-section label {
+	border: none;
+}
+
+#change-section,
+#pre-change-section {
+	background-color: #23A6CF;
+    color: white;
+    font-size: 18px;
+}
+
+#select-section .item-select:after, 
+#select-pre-section .item-select:after {
+	color: white;
+}
+
+.ion-loop{
+	font-weight: 600;
+    font-size: 18px;
+    width: 80% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border: 2px solid rgb(35, 166, 207) !important;
+	color: black !important;
+}
+
+/*Styling for signature pad */
+
+.sigPad, 
+.sig.sigWrapper{
+	width: 100%;
+}
+
+.sig.sigWrapper {
+	height: 100%;
+}
+
+.sigNav li a {
+	text-decoration: none !important;
+	background-color: lightgray;
+	position: absolute;
+    top: 4px;
+    right: 1px;
+    z-index: 2;
+}
+
+.platform-android .action-sheet .button {
+	padding: 15px;
+}
+
+.status {
+	float: right;
+}
+
+.item-checkbox {
+	width: 80%;
+	margin-top: 1%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(246, 246, 246);
+	font-size: 14px;
+	height: 45px;
+    line-height: 1;
+}
+
+input[type="radio"]:checked  + .radio-content .item-content  {
+	background-color: rgb(25, 181, 69) !important;
+	color: white !important;
+}
+
+.checkbox input:checked:before, 
+.checkbox input:checked + .checkbox-icon:before {
+	background-color: rgb(25, 181, 69) !important;
+	border-color: rgb(25, 181, 69) !important;
+}
+
+.Completed{
+	float: right;
+	color: green;
+}
+
+.Saved{
+	float: right;
+	color: red;
+}
+
+.item-content{
+	padding-right: 15px !important;
+}
+
+/* styling for popup */
+.proj-name{
+	color: green;
+}
+
+.popup{
+	width: 70%;
+}
+
+.popup-head{
+	display: none;
+}
+
+.popup-body{
+	padding: 30px 20px;
+    overflow: auto;
+    font-size: 20px;
+}
+
+.popup-buttons{
+	min-height: 0px !important;
+	padding: 0;
+	height: 55px;
+}
+
+.popup-buttons .button-positive {
+	background-color: rgb(25, 181, 69) !important;
+}
+/* popup styling ends here */
+
+/* Map CSS */
+#map {
+	/* height: 100%; */
+	height: 93vh;
+}
+
+#trace-loc{
+	padding: 0;
+}

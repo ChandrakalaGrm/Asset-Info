@@ -1,0 +1,167 @@
+<ion-view>
+	<ion-header-bar class="bar bar-header newproject-header">
+		<div class="buttons">
+			<button class="button button-clear button-icon ion-document-text" ng-click="complete($event)"></button>
+		</div>
+		<div class="title" style="color:white !important;text-align:center !important;">New Project</div>
+		<div class="buttons">
+			<button class="button button-clear button-icon ion-android-close" ui-sref="newproject"></button>
+		</div>
+	</ion-header-bar>
+	<div class="bar bar-subheader" id="select-section">
+		<label class="item item-input item-select">
+			<select ng-model="change" ng-change="changeSection(change)" ng-options="option for option in formTitles track by option" id="change-section"></select>
+		</label>
+	</div>
+	<ion-content class="has-subheader" delegate-handle="project-form">
+		<form id="project-form">
+			<div ng-repeat="(reqKeyTitle, section) in formDetails track by $index">
+				<div ng-repeat="(key, forms) in section track by $index" class="section center-to-left" data-form-title={{key}}>
+					<div ng-repeat="form in forms track by $index">
+						<div ng-if="form.type == 'text' || form.type == 'number' || form.type == 'email' || form.type == 'date' || form.type == 'tel' || form.type == 'url'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<label class="item item-input item-stacked-label newproject-label">
+								<input type="{{form.type}}" name="{{form.name}}" value="{{form.value}}" placeholder="{{form.placeholder}}" ng-model="form.value" />
+							</label>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'file'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<div class="upload-images">
+								<div class="uploaded-image">
+									<div class="image-preview">
+									</div>
+									<a href="#" class="remove-image">Remove</a>
+								</div>
+								<i class="ion-image upload-image-icon"></i>  <!-- ng-click="uploadImage($event)" -->
+								<input type="hidden" class="image-url" ng-model="form.value" />
+							</div>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'checkbox'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<ion-checkbox ng-repeat="value in form.values" name="{{form.name}}" value="{{value.option}}" ng-model="value.value">{{value.option}}</ion-checkbox>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'radio'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<ion-radio ng-repeat="value in form.values" name="{{form.name}}" value="{{value}}" ng-model="form.value">{{value}}</ion-radio>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'select'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<label class="item item-input item-select">
+								<select name="{{ form.name }}" ng-model="form.value" ng-options="option for option in form.options track by option">
+									<!-- <option ng-repeat="option in form.options" value="{{option}}">{{option}}</option> -->
+								</select>
+							</label>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'textarea'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<textarea name="{{form.name}}" placeholder="{{form.placeholder}}" ng-model="form.value">{{form.value}}</textarea>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'repeat'" class="list newproject-main">
+							<button class="button button-block button-outline button-icon ion-loop" ng-click="repeatFeild($index, forms)"> Repeat Field</button>
+						</div>
+						<div ng-if="form.type == 'signature'" class="list newproject-main">
+							<span class="input-label">{{ form.label }}</span>
+							<div class="sigPad">
+								<ul class="sigNav">
+									<li class="clearButton"><a href="#clear">Clear</a></li>
+								</ul>
+								<div class="sig sigWrapper">
+									<div class="typed"></div>
+									<canvas class="pad"></canvas>
+									<input type="hidden" name="output" class="output sig-val" ng-model="form.value" />
+								</div>
+							</div>
+							<!-- <span ng-bind="form.value"></span> -->
+						</div>
+						<div ng-if="form.type == 'form'" class="list">
+							<div ng-repeat="sections in form.formData"> <!-- data-form-name="{{form.name}}" -->
+								<div ng-repeat="formfields in sections track by $index">
+									<div ng-repeat="formfield in formfields track by $index">
+										<div ng-if="formfield.type == 'text' || formfield.type == 'number' || formfield.type == 'email' || formfield.type == 'date' || formfield.type == 'tel' || formfield.type == 'url'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<label class="item item-input item-stacked-label newproject-label">
+												<input type="{{formfield.type}}" name="{{formfield.name}}" value="{{formfield.value}}" placeholder="{{formfield.placeholder}}" ng-model="formfield.value" />
+											</label>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'file'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<div class="upload-images">
+												<div class="uploaded-image">
+													<div class="image-preview">
+													</div>
+													<a href="#" class="remove-image">Remove</a>
+												</div>
+												<i class="ion-image upload-image-icon"></i>  <!-- ng-click="uploadImage($event)" -->
+												<input type="hidden" class="image-url" ng-model="formfield.value"/>
+											</div>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'checkbox'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<ion-checkbox ng-repeat="val in formfield.values" name="{{formfield.name}}" value="{{val.option}}" ng-model="val.value">{{val.option}}</ion-checkbox>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'radio'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<ion-radio ng-repeat="val in formfield.values" name="{{formfield.name}}" value="{{val}}" ng-model="formfield.value">{{val}}</ion-radio>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'select'" class="list newproject-main">
+											<span class="input-label">{{ form.label }}</span>
+											<label class="item item-input item-select">
+												<select name="{{ formfield.name }}" ng-model="formfield.value" ng-options="option for option in formfield.options track by option">
+													<!-- <option ng-repeat="opt in formfield.options" value="{{opt}}">{{opt}}</option> -->
+												</select>
+											</label>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'textarea'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<textarea name="{{formfield.name}}" placeholder="{{formfield.placeholder}}" ng-model="formfield.value">{{formfield.value}}</textarea>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+										<div ng-if="formfield.type == 'repeat'" class="list newproject-main">
+											<button class="button button-block button-outline button-icon ion-loop" ng-click="repeatFeild($index, formfields)"> Repeat Field</button>
+										</div>
+										<div ng-if="formfield.type == 'signature'" class="list newproject-main">
+											<span class="input-label">{{ formfield.label }}</span>
+											<div class="sigPad">
+												<ul class="sigNav">
+													<li class="clearButton"><a href="#clear">Clear</a></li>
+												</ul>
+												<div class="sig sigWrapper">
+													<div class="typed"></div>
+													<canvas class="pad"></canvas>
+													<input type="hidden" name="output sig-val" class="output" ng-model="formfield.value" />
+												</div>
+											</div>
+											<!-- <span ng-bind="formfield.value"></span> -->
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="padding"> -->
+							<button class="button button-block button-outline button-icon ion-loop repeat-form" ng-click="repeatForm(key, section)"> Repeat From</button>
+							<!-- </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</ion-content>
+	<ion-footer-bar class="bar bar-footer hide-on-keyboard-open">
+		<div class="row">
+			<div class="col-33"><button class="button button-clear button-block button-icon ion-arrow-left-b" ng-click="prevSection()" ng-disabled="sectionIndex"></button></div>
+			<div class="col-33"><button class="button button-clear button-block button-icon ion-arrow-right-b" ng-click="nextSection()"ng-disabled="activeSectionLength"></button></div>
+			<div class="col-33"><button class="button button-clear button-icon button-block ion-android-done add-proj" ng-click="complete($event)" id="complete"></button></div>
+			<!-- <div class="col-25"><button class="button button-clear button-icon button-block ion-android-add" id="add-project" ng-click="modal.show()"></button></div> -->
+		</div>
+	</ion-footer-bar>
+</ion-view>

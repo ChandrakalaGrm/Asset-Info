@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<meta http-equiv="Content-Security-Policy" content="default-src *; img-src * &apos;self&apos; data:; style-src * &apos;self&apos; &apos;unsafe-inline&apos;; script-src * &apos;self&apos; &apos;unsafe-inline&apos; &apos;unsafe-eval&apos;">
+		<title></title>
+
+		<link href="lib/ionic/css/ionic.css" rel="stylesheet">
+		<link href="css/jquery.scombobox.min.css" rel="stylesheet">
+		<link href="css/jquery.signaturepad.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body ng-app="app" animation="slide-left-right-ios7" ng-controller="mainCtrl">
+		<ion-side-menus enable-menu-with-back-views="true" data-componentid="side-menu21">
+			<ion-side-menu-content drag-content="false">
+			<!--Main Content Useually <ion-nav-view>-->
+			<!-- 	<ion-nav-bar>
+					<!-- <ion-nav-back-button></ion-nav-back-button> -->
+					<!-- <ion-nav-buttons>
+						<div class="bar bar-header main-header"><button class="button button-icon ion-navicon header-button" menu-toggle="left"></button> -->
+							
+								<!-- <div class="header-text">Reports</div> -->
+								<!-- <div class="item-input-inset"> -->
+									<!--<div class="title animation" ng-show="hide">Reports</div>-->
+								<!-- 	<div class="title animation" style="color:white !important;text-align:left !important;" ng-hide="hide == false">Reports</div>
+									<div ng-hide="hide" class="animation">
+										<label class="item-input-wrapper form-label"> -->
+										<!-- <i class="icon ion-ios-search placeholder-icon"></i> -->
+								<!-- 		<input type="search" placeholder="Search" class="form-input" />
+										</label>
+									</div>
+								</div>
+							
+							<button class="button button-icon ion-ios-search-strong header-button button-right" ng-click="toggleSearch()"></button>	
+						</div>
+					</ion-nav-buttons>
+				</ion-nav-bar> -->
+				<!-- <div class="bar bar-footer project-footer" style="background-color:transparent; border:0px !important; background-position:0 !important"> -->
+				<!-- </div> name="menuContent"-->
+				<ion-nav-view></ion-nav-view>
+			</ion-side-menu-content>
+			<!-- Left Menu-->
+			<ion-side-menu side="left" id="side-menu21" style="display: none;">
+				<ion-header-bar style="background-color:rgb(35, 166, 207);">
+					<div class="title" style="color:white !important;text-align:center !important;">Menu</div>
+				</ion-header-bar>
+				<ion-content class="side-menu-left has-header">
+					<ion-list id="menu">
+						<ion-item class="item" ui-sref="projects" menu-close="">Projects</ion-item>
+						<ion-item class="item" ui-sref="Map" id="map-btn" menu-close="">Map</ion-item>
+						<ion-item class="item" id="trace-loc"><ion-toggle ng-model="location" ng-change="locationStatus(location)">Location </ion-toggle></ion-item>
+						<ion-item class="item" menu-close="" id="settings">Settings</ion-item>
+						<ion-item class="item" menu-close="" id="logout" ng-click="logout()">Logout</ion-item>
+					</ion-list>
+				</ion-content>
+			</ion-side-menu>
+		</ion-side-menus>
+		<script src="cordova.js"></script>
+		<!-- <script src="js/iap-android.js"></script> -->
+		<script src="lib/ionic/js/ionic.bundle.js"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyDjGRmjisKo_HEruP-9tQ-KQhanbc0tp04"></script>
+		<!-- cordova script (this will be a 404 during development) -->
+		<!--<script src="cordova.js"></script>
+
+		<!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+		<link href="css/ionic.app.css" rel="stylesheet">
+		-->
+		<!-- <script src="js/missed.js"></script>	add this script for IE8 compatibility -->
+		<!--<script src="js/latinize.js"></script>	add this to use filterIgnoreAccents option (convert Művész to Muvesz) -->
+		<script src="js/jquery-2.2.3.min.js"></script>
+		<!-- <script src="js/jquery.scombobox.js"></script> -->
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.signaturepad.min.js"></script>
+		<script src="js/json2.min.js"></script>
+		
+		<!-- Firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+		
+		<!-- User defined -->
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/routes.js"></script>
+		<script src="js/services.js"></script>
+		<script src="js/directives.js"></script>
+		<!-- Only required for Tab projects w/ pages in multiple tabs 
+		<script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+		-->
+	</body>
+</html>

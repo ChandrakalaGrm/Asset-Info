@@ -1,0 +1,60 @@
+<ion-view id="page5">
+    <ion-content overflow-scroll="true" padding="true">
+		<h1 class="main-head">Sign up</h1>
+		<form class="signup list" name="signupForm" ng-submit="signup(signupForm)" novalidate>
+            <ion-list>
+				<div class="form-padding">
+					<label class="item item-input login-input">
+						<input class="form" type="text" placeholder="First Name" ng-model="user.firstName" name="firstName" required />
+					</label>
+					<span ng-show="signupForm.firstName.$error.required && signupForm.firstName.$dirty">Please enter your first name !</span>
+				</div>	
+				<div class="form-padding">
+					<label class="item item-input login-input">
+						<input class="form" type="text" placeholder="Last Name" ng-model="user.lastName" name="lastName" required />
+					</label>
+					<span ng-show="signupForm.lastName.$error.required && signupForm.lastName.$dirty">Please enter your last name !</span>
+				</div>
+				<div class="form-padding">
+					 <label class="item item-input login-input">
+						<input class="form" type="email" placeholder="Email" ng-model="user.email" name="email" required />
+					</label>
+					<span ng-show="signupForm.email.$error.required && signupForm.email.$dirty">Please enter your email !</span>
+					<span ng-show="signupForm.email.$error.email && signupForm.email.$dirty">Please enter a valid email address !</span>
+				</div>
+				<div class="form-padding">
+					 <label class="item item-input login-input">
+						<input class="form" type="password" name="pwd" placeholder="Password" ng-model="user.pwd" ng-minlength="6" ng-maxlength="15" required />
+					</label>
+					<span ng-show="signupForm.pwd.$error.required && signupForm.pwd.$dirty">Please enter your password !</span>
+					<span ng-show="!signupForm.pwd.$error.required && (signupForm.pwd.$error.minlength || signupForm.pwd.$error.maxlength) && signupForm.pwd.$dirty">Password must be 6 to 15 characters. </span>
+				</div>
+				<div class="form-padding">
+					<label class="item item-input login-input">
+						<input class="form" type="password" name="confirmPwd" placeholder="Confirm Password" ng-model="user.confirmPwd" compare-to="user.pwd" required />
+					</label>
+					<span ng-show="signupForm.confirmPwd.$error.required && signupForm.confirmPwd.$dirty">Please confirm your password !</span>
+					<span ng-show="!signupForm.confirmPwd.$error.required && signupForm.confirmPwd.$error.compareTo && signupForm.confirmPwd.$dirty">Password not match.</span>
+				</div>
+				<div class="form-padding" ng-if="hideShowValues[0]">
+					 <label class="item item-input login-input">
+						<input class="form" type="email" placeholder="Manager Email" ng-model="user.managerEmail" name="managerEmail" required />
+					</label>
+					<span ng-show="signupForm.managerEmail.$error.required && signupForm.managerEmail.$dirty">Please enter manager email !</span>
+					<span ng-show="signupForm.managerEmail.$error.email&& signupForm.managerEmail.$dirty">Please enter a valid email address !</span>
+				</div>
+				<div class="form-padding" ng-if="hideShowValues[1]">
+					<label class="item item-input login-input">
+						<input class="form" type="text" placeholder="Company Name" ng-model="user.companyName" name="companyName" required />
+					</label>
+					<span ng-show="signupForm.companyName.$error.required && signupForm.companyName.$dirty">Please enter your company name !</span>
+				</div>	
+            </ion-list>
+			<div class="spacer"></div>
+			<span ng-hide="errorMessage" ng-bind="errorInfo"></span>
+            <button type="submit" id="signup-button1" class="button button-assertive button-block" ng-disabled="signupForm.$invalid">Sign up</button>
+        </form>
+		<p class="account">Already an User? <a href="#/login"> Log In</a></p>
+		<a href="#" id="assetInfo-button8" class="cont-as-guest">Continue as Guest</a>
+    </ion-content>
+</ion-view>

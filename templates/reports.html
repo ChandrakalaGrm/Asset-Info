@@ -1,0 +1,20 @@
+<ion-view id="page4">
+	<ion-header-bar class="bar bar-header main-header">
+		<button class="button button-icon ion-navicon header-button" menu-toggle="left"></button>
+		
+			<!-- <div class="header-text">Reports</div> -->
+			<div class="item-input-inset">
+				<!--<div class="title animation" ng-show="hide">Reports</div>-->
+				<div class="title animation" style="color:white !important;text-align:left !important;" ng-hide="hide == false">Reports</div>
+				<div ng-hide="hide" class="animation">
+					<label class="item-input-wrapper form-label">
+					<!-- <i class="icon ion-ios-search placeholder-icon"></i> -->
+					<input type="search" placeholder="Search" class="form-input item-search" ng-model="searchProjects" />
+					</label>
+				</div>
+			</div>
+		
+		<button class="button button-icon ion-ios-search-strong header-button button-right" ng-click="toggleSearch()"></button>	
+	</ion-header-bar>
+    <ion-content overflow-scroll="true" padding="true" class="has-header"></ion-content>
+</ion-view>

@@ -1,0 +1,11 @@
+<ion-modal-view>
+	<ion-bar-header class="bar bar-header">
+		<div class="title">Form List</div>
+		<button class="button button-clear button-icon ion-android-close" ui-sref="newproject" ng-click="modal.hide()"></button>
+	</ion-bar-header>
+	<ion-content class="has-header">
+		<ion-list id="formList">
+			<ion-item ng-repeat="form in formList" id="{{ form.id }}" ng-click="appendFrom(form.id, form.name, form.data)">{{ form.name }}</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-modal-view>

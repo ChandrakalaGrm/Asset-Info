@@ -1,0 +1,632 @@
+/*
+* Asset Info Style sheet
+*/
+a {
+	text-decoration: none;
+}
+
+/* Log In page */
+.forgot-password {
+	text-align: center;	
+	font-size: 18px !important;
+}
+
+.forgot-password a ,
+.account a {
+	text-decoration: none;
+	color: rgb(40, 58, 143)	 !important;
+}
+
+.login {
+	margin-top: 5% !important;
+	
+}
+
+#login-button2 {
+	border-radius: 15px !important;
+	font-size: 18px !important;
+	background-color: rgb(35, 166, 207) !important;
+	color: white;
+}
+
+#assetInfo-button7 {
+	font-size: 18px !important;
+	text-align: center;
+    display: block;
+}
+
+/* Log In & Sign up page */
+.form-padding {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;	
+}
+
+.form-padding label {
+	border-radius: 15px !important;
+}
+
+.main-head {
+	text-align: center;
+	color: rgb(35, 166, 207) !important;
+}
+
+.account span,
+.form {
+	text-align: center;
+	font-size: 18px !important;
+	color: rgb(40, 58, 143)	 !important;
+}
+
+.account {
+	text-align: center;
+	font-size: 18px;
+}
+/* 
+.spacer {
+	height: 35px !important;
+} */
+
+.login-input {
+	border-radius: 15px !important;	
+}
+
+.forms-label {
+	height: 40px;
+	background-color: transparent !important;
+	border-radius: 0px !important;
+	text-align: center;
+}
+
+.ion-ios-plus-outline {
+    font-size: 25px;  
+}
+
+.form-label {
+	background-color: skyblue;
+	opacity: 0.9;
+}
+
+.form-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white !important;
+}
+
+.form-input::-moz-placeholder { /* Firefox 19+ */
+  color: white !important;
+}
+
+.newproject-label::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black !important;
+} 
+	
+
+.tab-item .icon {
+	padding-top: 5%;
+	color: white;
+	font-weight: 100 !important;
+}
+
+.tabs-striped.tabs-stable .tabs {
+	background-color: rgb(35, 166, 207) !important;
+    margin-top: -1%;	
+}
+
+.header-button ,
+.header-text,
+.title{
+	color: white !important;
+}
+
+.add-button:before,
+.delete-button:before {
+	font-size: 20px !important;
+}
+
+.header-button {
+	display: inline-block !important;
+}
+
+.add-button,
+.ion-chevron-right,
+.ion-chevron-left {
+	color: white !important;
+	font-weight: bold;
+}
+.footer-button {
+	color:rgb(35, 166, 207) !important;
+	position:absolute;
+	right:0;
+}
+
+.project-footer {
+	background-color: transparent !important;
+	border: 0px;
+	background-position: 0 !important;
+}
+.main-list {
+    z-index: 12;
+    width: 100%;
+}
+
+.main-header {
+	background-color: rgb(35, 166, 207) !important;
+}
+
+.placeholder-icon {
+    color: white;
+    font-size: 20px;
+}
+
+.newproject-label {
+	border-radius: 10px;
+    background-color: gray;
+    opacity: 0.4;
+}
+
+.newproject-main label input {
+	height: 25px;
+	background-color: transparent;
+	color: white;
+	font-weight: 700;
+}
+
+.tab-title {
+	color: white;
+}
+
+.bar .title.title-left {
+    text-align: center !important; 
+}
+
+.bar-header,
+.bar-footer {
+	padding: 0;
+	background-color: rgb(35, 166, 207) !important;	
+}
+
+.tab-nav .tabs {
+	width: 100% !important;
+}
+
+/* Sign up*/
+#signup-button1 {
+	border-radius: 15px !important;
+	font-size: 18px !important;
+	background-color: rgb(35, 166, 207);
+	color: white;
+	font-weight: bold;
+}
+
+#assetInfo-button6 ,
+#assetInfo-button8{
+	font-size: 18px !important;
+	color: rgb(40, 58, 143) !important;
+	background-color: transparent;
+	display: block;
+	text-align: center;
+}
+
+#assetInfo-button4,
+#assetInfo-button5 {
+	border-radius: 15px !important;
+	background-color: rgb(35, 166, 207);
+	font-weight: bold;
+	margin: 10px 0px 0px 0px;	
+}
+
+.signup, 
+.login{
+	text-align: center;
+    color: red;
+}
+
+.add-proj{
+	color: white !important;
+    font-size: 22px !important;
+    font-weight: 400 !important;
+}
+
+.item-input-inset, 
+.item-input-inset div:nth-child(2) {
+	width:100%;
+}
+
+.item-input-inset .title {
+	z-index: 1;
+    position: static;
+	color: white;
+}
+
+.animation {
+	transition: all linear 0.8s;
+	opacity: 1;
+	width: 100%;
+}
+
+.animation.ng-hide {
+	transition: all linear 0s;
+	opacity: 0;
+}
+
+.animation [type=search] {
+	width: 100%;
+	font-weight: 600;
+	color: white !important;
+}
+
+.bar-footer .button-block {
+	margin: 0;
+	height: 100%;
+}
+
+.bar-footer .row, 
+.bar-footer .row div {
+	height: 100%;
+	padding: 0;
+}
+
+.newproject-main .item-select {
+	height: 50px;
+	border-color: transparent transparent gray transparent;
+}
+
+.bar-subheader .item-select {
+	height: 44px;
+	border-radius: none;
+}
+
+.item-select select {
+	width: 100%;
+	max-width: 100%;
+	direction: ltr;
+}
+
+span.input-label {
+	max-width: 100% !important;
+	width: 100%;
+}
+
+#select-section, #select-pre-section{
+	padding: 0;
+}
+
+textarea {
+	height: 50px;
+	width: 100%;
+	border: 1px solid lightgray;
+	padding: 16px;
+	border-radius: 15px;
+	max-width: 100% !important;
+	background-color: #cccccc;
+	color: white;
+}
+
+.section, .pre-section {
+	position: absolute;
+	width: 100%;
+	top: 0;
+}
+/* 
+.cen-to-lef{
+	left: 0%;
+} */
+
+.left-to-center {
+	left: 0%;
+	animation: leftToCenter 0.6s 1 !important;
+	-webkit-animation: leftToCenter 0.6s 1 !important;
+}
+
+@keyframes leftToCenter {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+@-webkit-keyframes leftToCenter {
+	from {
+		left: 100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.center-to-right {
+	display: none;
+	left: -100%;
+	animation: centerToRight 0.6s 1 !important;
+	-webkit-animation: centerToRight 0.6s 1 !important;
+}
+
+@keyframes centerToRight {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+@-webkit-keyframes centerToRight {
+	from {
+		left: 0%;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+.center-to-left {
+	display: none;
+	left: 100%;
+	animation: centerToLeft 0.6s 1 !important;
+	-webkit-animation: centerToLeft 0.6s 1 !important;
+}
+
+@keyframes centerToLeft{
+	from {
+		left: 0%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes centerToLeft{
+	from {
+		left: 0%;
+	}
+	to {
+		left: 100%;
+	}
+}
+
+.right-to-center {
+	left: 0%;
+	animation: rightToCenter 0.6s 1 !important;
+	-webkit-animation: rightToCenter 0.6s 1 !important;
+}
+
+@keyframes rightToCenter {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+@-webkit-keyframes rightToCenter {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0%;
+	}
+}
+
+.section .item-radio, .pre-section .item-radio{
+	margin-top: 10px;
+    width: 40%;
+    display: inline-block;
+    margin-left: 7%;
+    height: 42px;
+    border-radius: 12px;
+	text-align: center;
+}
+
+.section .item-radio .item-content, .pre-section .item-radio .item-content{
+	padding: 10px;
+	background-color: lightgrey;
+	color: #fff;
+	font-weight: 700;
+}
+
+.section .item-radio input:checked + .radio-content .item-content, .pre-section .item-radio input:checked + .radio-content .item-content{
+	background-color: #23A6CF;
+}
+
+.radio-icon.disable-pointer-events.icon.ion-checkmark{
+	visibility: hidden !important;
+}
+.modal-backdrop{
+	background-color: white !important;
+}
+
+
+@media screen and (min-width: 600px){
+	.form-padding input {
+		height: 50px !important;
+	}
+	
+	.form-padding {
+		margin-top: 2%;
+		padding-top: 3% !important;
+	}
+	
+	.main-head {
+		padding-top:10%;
+	}
+	
+	#signup-button1 {
+		height: 65px !important;
+	}
+	
+	.account,
+	#assetInfo-button8 {
+		font-size:28px !important;
+	}
+	
+	.asset-info {
+		height: 40vh;
+	}
+	
+	#assetInfo-button4, 
+	#assetInfo-button5 {
+		height: 7vh;
+		line-height: 3;
+	}
+	
+	#assetInfo-button6 {
+		font-size: 28px !important;
+	}
+	
+}
+
+@media screen and (min-width: 412px){
+	.form-padding {
+		margin-top: 2%;
+		padding-top: 3% !important;
+	}
+	
+	.asset-info {
+		height: 40vh;
+	}
+	
+	.main-head {
+		padding-top:10%;
+	}
+}
+
+
+.scombobox {
+	border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.scombobox-dropdown-background, .scombobox-dropdown-arrow {
+	display: none !important;
+}
+
+.scombobox-display {
+	border-radius: 10px;
+    padding-left: 10px !important;
+    background-color: lightgrey;
+	color: white !important;
+    font-weight: 800;
+}
+
+.upload-images {
+	text-align: center;
+	color: rgb(35, 166, 207) !important;
+}
+
+.upload-image-icon {
+	font-size: 50px;
+}
+
+.remove-image{
+	font-size: 18px;
+}
+
+.image-preview img{
+	width: 100%;
+}
+
+.uploaded-image{
+	display: none;
+}
+
+.bar .button.button-icon:before{
+	font-size: 40px;
+	color: white !important;
+}
+
+ion-modal-view{
+	width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+#select-section label, #select-pre-section label{
+	border: none;
+}
+
+#change-section, #pre-change-section{
+	background-color: #23A6CF;
+    color: white;
+    font-size: 18px;
+}
+
+#select-section .item-select:after, #select-pre-section .item-select:after {
+	color: white;
+}
+
+.ion-loop{
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/*Styling for signature pad */
+
+.sigPad, .sig.sigWrapper{
+	width: 100%;
+}
+
+.sig.sigWrapper{
+	height: 100%;
+}
+
+/* .pad{
+	display: block;
+	height: 100%;
+} */
+
+.sigNav li a {
+	text-decoration: none !important;
+	background-color: lightgray;
+	position: absolute;
+    top: 4px;
+    right: 1px;
+    z-index: 2;
+}
+/*        */
+
+.platform-android .action-sheet .button{
+	padding: 15px;
+}
+
+.proj-name{
+	color: green;
+}
+
+.Completed{
+	float: right;
+	color: green;
+}
+
+.Saved{
+	float: right;
+	color: red;
+}
+
+.item-content{
+	padding-right: 15px !important;
+}
+
+/* styling for popup */
+.popup{
+	width: 70%;
+}
+
+.popup-head{
+	display: none;
+}
+
+.popup-body{
+	padding: 20px;
+    overflow: auto;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.popup-buttons{
+	min-height: 0px !important;
+	padding: 0;
+	height: 55px;
+}
